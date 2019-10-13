@@ -28,19 +28,37 @@ Things you may want to cover:
 ## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false|
-|image|string|null: false|
+|text_id|integer|null: false|
+|image_id|integer|null: false|
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
 - belongs_to :group
+- has_one :text
+- has_many :images
+
+## textsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|body|text|null: false|
+
+### Association
+- belongs_to :messages
+
+## imagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|image|string|null: false|
+
+### Association
+- belongs_to :messages
 
 ## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false|
+|name|string|null: false|
 
 ### Association
 - has_many :users, through: groups_users
@@ -50,7 +68,7 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false|
+|name|string|null: false|
 |email|string|null: false, unique: true|
 |password|string|null: false|
 
