@@ -7,7 +7,7 @@
     .side-header
       .side-header__box
         %p.side-header__box__user-name
-          t_ishihara
+          = current_user.name
         %ul.side-header__box__menu
           %li.side-header__box__menu__new-group
             =link_to "/groups/new" do
