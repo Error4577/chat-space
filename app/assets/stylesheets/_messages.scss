@@ -6,17 +6,6 @@ a{
   text-decoration: none;
 }
 
-.flash-box{
-  color: white;
-  font-size: 1rem;
-  font-weight: lighter;
-  text-align: center;
-  width: 100vw;
-  .notice{
-    background-color: #38aef0;
-  }
-}
-
 .wrapper{
   display: flex;
   .chat-side{
@@ -55,6 +44,7 @@ a{
       background-color: #2f3e51;
       padding: 20px 20px 0;
       .group{
+        margin-bottom: 40px;
         &__group-name{
           font-size: 15px;
           margin-bottom: 5px;
