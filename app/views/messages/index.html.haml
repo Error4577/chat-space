@@ -12,22 +12,7 @@
         .main-header__edit-btn
           Edit
     .messages
-      .message
-        .message__upper-info
-          %p.message__upper-info__talker
-            t_ishihara
-          %p.message__upper-info__date
-            2019/10/16(Wed) 12:32:55
-        %p.message__text
-          hoge
-      .message
-        .message__upper-info
-          %p.message__upper-info__talker
-            t_ishihara
-          %p.message__upper-info__date
-            2019/10/16(Wed) 13:54:06
-        %p.message__text
-          fuga
+      = render @messages
     .form
       = form_for [@group, @message] do |f|
         = f.text_field :body, class: 'form__message', placeholder: 'type a message'
