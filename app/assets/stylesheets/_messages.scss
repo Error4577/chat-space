@@ -95,10 +95,10 @@ a{
       background-color: #fafafa;
       .message{
         padding-bottom: 40px;
-        &__upper-info{
+        .upper-message{
           display: flex;
           margin-bottom: 10px;
-          &__talker{
+          &__user-name{
             color: #434a54;
             font-size: 16px;
             font-weight: bold;
@@ -109,7 +109,7 @@ a{
             margin-left: 10px;
           }
         }
-        &__text{
+        .lower-message{
           color: #434a54;
           font-size: 14px;
           margin-bottom: 10px;
