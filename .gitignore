@@ -18,6 +18,7 @@
 
 # 画像ファイルはアップロードしたくないので、追記
 public/uploads/*
+public/images/*
 
 # DS_Storeファイルはアップロードしたくないので追記
 .DS_Store
