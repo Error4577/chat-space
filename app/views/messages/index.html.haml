@@ -9,8 +9,8 @@
           sample
         %ul.main-header__left-box__member-list
           Member：
-          %li.main-header__left-box__member-list__member
-            t_ishihara
+          - @group.users.each do |user|
+            =user.name
       =link_to "/groups/sample/edit" do
         .main-header__edit-btn
           Edit
