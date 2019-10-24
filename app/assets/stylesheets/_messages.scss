@@ -6,6 +6,11 @@ a{
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
+}
+
 .wrapper{
   display: flex;
   .chat-side{
@@ -93,6 +98,7 @@ a{
       height: calc(100vh - 190px);
       padding: 46px 40px;
       background-color: #fafafa;
+      overflow: scroll;
       .message{
         padding-bottom: 40px;
         .upper-message{
